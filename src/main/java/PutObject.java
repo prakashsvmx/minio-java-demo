@@ -42,6 +42,7 @@ public class PutObject {
                             .build();
 
 
+            minioClient.traceOn(System.out);
             Map<String, String> headers = new HashMap<>();
             // Add custom content type
             headers.put("Content-Type", "image/png");
